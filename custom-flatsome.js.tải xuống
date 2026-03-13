@@ -1,0 +1,56 @@
+(function ($) {
+    "use strict";
+
+
+
+    var initClickFilterProduct = function(){
+        if ($('.view_more_options').length) {
+            $('.view_more_options').click(function (e) {
+                e.preventDefault();
+                $(window).resize();
+                if ($(this).parent().is('.open')) {
+                    $(this).parent().removeClass('open');
+
+                } else {
+                    $(window).resize();
+                    $(this).parent().addClass('open');
+
+                }
+            });
+            $('.closeFilter').click(function (e) {
+                e.preventDefault();
+
+                $('.moreviewoption ').removeClass('open');
+
+            });
+        }
+    }
+
+    jQuery(document).ready(function ($) {
+
+        initClickFilterProduct();
+        if($('.swiper-video').length){
+            var swiper = new Swiper('.swiper-video', {
+                effect: 'coverflow',
+                grabCursor: true,
+                centeredSlides: true,
+                slidesPerView: 3,
+                loop:true,
+                coverflowEffect: {
+                    rotate:-20,
+                    stretch:0,
+                    depth: 250,
+                    modifier: 1,
+                    slideShadows : false,
+                },
+
+                navigation: {
+                    nextEl: '.video-next',
+                    prevEl: '.video-prev',
+                },
+
+            });
+        }
+    });
+
+})(jQuery);
