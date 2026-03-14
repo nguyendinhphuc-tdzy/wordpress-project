@@ -1,0 +1,52 @@
+
+.header-top .custom  a{
+    color: #fff;
+}
+.hdt-contact a {
+    display: inline-block;
+    margin-right: 10px;
+}
+.blog-single .entry-header-text-top{
+    padding-bottom: 0;
+}
+.blog-single .entry-content{
+    padding-top: 10px;
+}
+    /*footer*/
+.footer-widgets .textwidget h4{
+    margin-bottom: 0;
+}
+.widget .is-divider {
+    display: none;
+}
+.footer-wrapper .widget .widget-title {
+    display: block;
+    padding-top: 5px;
+    position: relative;
+    margin-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    z-index: 1;
+    text-transform: inherit;
+}
+.footer-wrapper .widget .widget-title:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    transition: all .5s ease;
+    bottom: 0;
+    background: #80bb01;
+    width: 80px;
+    height: 5px;
+    display: block;
+    z-index: -1;
+}
+
+.sidebar-inner{
+    border: 1px solid #ebebeb;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    padding: 20px;
+    background: #f9f9f9;
+}
